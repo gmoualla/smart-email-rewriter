@@ -17,8 +17,8 @@ A simple AI-powered tool that rewrites emails into different tones and styles us
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/email-rewriter-gemini.git
-cd email-rewriter-gemini
+git clone https://github.com/gmoualla/smart-email-rewriter.git
+cd smart-email-rewriter
 ```
 
 ### 2. Install Dependencies
