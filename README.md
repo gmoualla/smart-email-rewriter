@@ -6,7 +6,7 @@ A simple AI-powered tool that rewrites emails into different tones and styles us
 - Rewrite emails into **Professional**, **Friendly**, or **Concise** tones
 - Iterative refinement with custom feedback
 - Lightweight CLI interface
-- Powered by Gemini 2.0 Flash (experimental)
+- Powered by Gemini 2.0 Flash
 
 ## 🧰 Tech Stack
 - Python 3.9+
@@ -73,10 +73,6 @@ I am writing to request the report at your earliest convenience...
 Refine? (y/n): n
 ```
 
-## 📝 Sample Emails
-
-Check the `examples/sample_email.txt` file for 10 sample emails you can use to test the tool.
-
 ## 🔧 Troubleshooting
 
 ### "ImportError: cannot import name 'genai'"
@@ -95,8 +91,16 @@ echo $env:GEMINI_API_KEY
 echo $GEMINI_API_KEY
 ```
 
+### \"RESOURCE_EXHAUSTED\" or Quota Errors
+If you see quota errors, the model might not be available on the free tier. The code uses `gemini-2.0-flash` which has proper quota limits:
+- 15 Requests Per Minute (RPM)
+- 1M Tokens Per Minute (TPM)
+- 200 Requests Per Day (RPD)
+
+Check your quota at [Google AI Studio Usage](https://aistudio.google.com/usage?tab=rate-limit).
+
+
 
 ## 📄 License
 
 MIT License - feel free to use and modify!
-

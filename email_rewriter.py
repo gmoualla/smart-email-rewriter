@@ -2,7 +2,7 @@ from google import genai
 
 # Initialize the client (automatically uses GEMINI_API_KEY from environment)
 client = genai.Client()
-MODEL_NAME = "gemini-2.0-flash-exp" 
+MODEL_NAME = "gemini-2.0-flash" 
 
 def rewrite_email(email_text, style):
     prompt = f'''
